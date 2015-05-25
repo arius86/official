@@ -24,6 +24,6 @@ class UploaderServiceProvider implements ServiceProviderInterface
 
     public function getDependencies()
     {
-        return array();
+        return [];
     }
 }

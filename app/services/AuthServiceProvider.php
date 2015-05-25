@@ -37,9 +37,9 @@ class AuthServiceProvider implements ServiceProviderInterface
      */
     public function getDependencies()
     {
-        return array(
+        return [
             SessionManagerServiceProvider::SERVICE_NAME,
             UserPasswordManagerServiceProvider::SERVICE_NAME
-        );
+        ];
     }
 } 

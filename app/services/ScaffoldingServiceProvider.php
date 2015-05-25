@@ -35,8 +35,8 @@ class ScaffoldingServiceProvider implements ServiceProviderInterface
      */
     public function getDependencies()
     {
-        return array(
+        return [
             MongoServiceProvider::SERVICE_NAME,
-        );
+        ];
     }
 } 

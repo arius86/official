@@ -16,5 +16,8 @@ use Vegas\Db\Decorator\CollectionAbstract;
 
 class Contributor extends CollectionAbstract
 {
-
+    public $login;
+    public $contributions;
+    public $updated_at;
+    public $created_at;
 } 

@@ -13,14 +13,17 @@
 namespace Project\Controllers\Backend;
 
 use Vegas\Media\Helper As MediaHelper;
-use Vegas\Mvc\Controller\CrudUploadAbstract;
+use Vegas\Mvc\Controller\CrudAbstract;
+use Vegas\Mvc\Controller\UploadTrait;
 
 /**
  * Class ProjectController
  * @package Project\Controllers\Backend
  */
-class ProjectController extends CrudUploadAbstract
+class ProjectController extends CrudAbstract
 {
+    use UploadTrait;
+
     protected $formName = '\Project\Forms\Project';
     protected $modelName = '\Project\Models\Project';
 
