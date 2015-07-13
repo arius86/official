@@ -22,9 +22,10 @@ class Project extends CollectionAbstract
 
     public function getThumbnail()
     {
-        if (!empty($this->image)) {
-            $files = $this->readMapped('image');
-            $filePath = $files[0]->getThumbnailPath(600, 300);
+        $files = $this->readMapped('image');
+
+        if (!empty($files[0])) {
+           $filePath = $files[0]->getThumbnailPath(600, 300);
             if (file_exists($filePath)) {
                 $fileUrl = $files[0]->getThumbnailUrl(600, 300);
             } else {
